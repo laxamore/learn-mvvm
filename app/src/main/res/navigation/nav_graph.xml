@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/todos"
+    app:startDestination="@id/todosListFragment">
+
+    <fragment
+        android:id="@+id/todosListFragment"
+        android:name="com.laxa.learnmvvm.view.fragment.TodosListFragment"
+        android:label="TodosListFragment">
+        <action
+            android:id="@+id/action_todosListFragment_to_todosAddFragment"
+            app:destination="@id/todosAddFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/todosAddFragment"
+        android:name="com.laxa.learnmvvm.view.fragment.TodosAddFragment"
+        android:label="TodosAddFragment" />
+</navigation>
